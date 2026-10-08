@@ -68,7 +68,7 @@ export function QuestionCard({ question }: QuestionCardProps) {
           </Heading>
         </div>
 
-        <Text size="md" color="secondary" className="text-sm sm:text-base md:text-lg">
+        <Text size="base" color="secondary" className="text-sm sm:text-base md:text-lg">
           Quanto é o resultado?
         </Text>
       </div>

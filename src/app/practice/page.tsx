@@ -120,7 +120,11 @@ export default function PracticePage() {
                           </div>
                         ) : (
                           <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
-                            <Text size="lg">{phase.emoji}</Text>
+                            <Text size="lg">
+                              {phase.operation === 'addition' ? '➕' :
+                               phase.operation === 'subtraction' ? '➖' :
+                               phase.operation === 'multiplication' ? '✖️' : '➗'}
+                            </Text>
                           </div>
                         )}
 
@@ -137,12 +141,11 @@ export default function PracticePage() {
                         {phase.isCompleted && (
                           <div className="flex items-center gap-1">
                             {Array.from({ length: phase.stars }).map((_, i) => (
-                              <Icon
+                              <Star
                                 key={i}
-                                icon={Star}
-                                size="sm"
-                                color="#fbbf24"
+                                className="w-4 h-4"
                                 fill="#fbbf24"
+                                color="#fbbf24"
                               />
                             ))}
                           </div>

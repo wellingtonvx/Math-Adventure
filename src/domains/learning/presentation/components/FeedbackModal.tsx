@@ -87,7 +87,7 @@ export function FeedbackModal({
                   <Heading level={3} className="mb-2 text-xl sm:text-2xl">
                     {isCorrect ? 'Parabéns! 🎉' : 'Quase lá! 💪'}
                   </Heading>
-                  <Text size="md" color="secondary" className="text-sm sm:text-base">
+                  <Text size="base" color="secondary" className="text-sm sm:text-base">
                     {isCorrect
                       ? 'Você acertou!'
                       : `A resposta correta é ${correctAnswer}`}
@@ -102,7 +102,7 @@ export function FeedbackModal({
                     transition={{ delay: 0.3 }}
                     className="bg-purple-100 rounded-xl p-3"
                   >
-                    <Text size="md" weight="bold" color="primary" className="text-base sm:text-lg">
+                    <Text size="base" weight="bold" color="primary" className="text-base sm:text-lg">
                       +{xpEarned} XP
                     </Text>
                   </motion.div>

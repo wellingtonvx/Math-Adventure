@@ -100,7 +100,7 @@ export function AchievementUnlockedModal({
             >
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl mb-1">⭐</div>
-                <Text size="md" weight="bold" className="text-base sm:text-lg">
+                <Text size="base" weight="bold" className="text-base sm:text-lg">
                   +{achievement.reward.xp}
                 </Text>
                 <Text size="xs" color="secondary" className="text-[10px] sm:text-xs">
@@ -109,7 +109,7 @@ export function AchievementUnlockedModal({
               </div>
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl mb-1">🪙</div>
-                <Text size="md" weight="bold" className="text-base sm:text-lg">
+                <Text size="base" weight="bold" className="text-base sm:text-lg">
                   +{achievement.reward.coins}
                 </Text>
                 <Text size="xs" color="secondary" className="text-[10px] sm:text-xs">

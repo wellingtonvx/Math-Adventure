@@ -104,7 +104,7 @@ export function LevelUpModal({ newLevel, onClose }: LevelUpModalProps) {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              <Text size="md" className="text-white text-base sm:text-lg">
+              <Text size="base" className="text-white text-base sm:text-lg">
                 Você subiu de nível!
               </Text>
               <Text size="sm" className="text-white opacity-90 mt-2 text-sm">
